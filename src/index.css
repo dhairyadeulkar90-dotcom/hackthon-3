@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-gold-50: #fefbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+  --color-gold-700: #b45309;
+  --color-gold-800: #92400e;
+  --color-gold-900: #78350f;
+  --color-gold-950: #451a03;
+}
+
+/* Custom Base Styles */
+html {
+  scroll-behavior: smooth;
+  background-color: #030712;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* Custom Utilities */
+.parchment-gradient {
+  background: linear-gradient(135deg, #fbf2db 0%, #f1dfb8 50%, #e2c994 100%);
+}
+
+.parchment-text {
+  color: #3b2314;
+}
+
+.parchment-border {
+  border-color: #85581A;
+}
+
+.glass-nav {
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(217, 119, 6, 0.15);
+}
+
+.gold-text-shimmer {
+  background: linear-gradient(to right, #d97706 0%, #fcd34d 50%, #d97706 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+.text-stroke-gold {
+  -webkit-text-stroke: 1px rgba(217, 119, 6, 0.5);
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(217, 119, 6, 0.3);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(217, 119, 6, 0.6);
+  transition: all 0.3s ease;
+}
+
+.wood-gradient {
+  background: linear-gradient(to bottom, #2d1810, #1b0c07);
+}
+
+.sea-gradient {
+  background: linear-gradient(to bottom, #020617, #0b1e36, #020617);
+}
+
+/* Decorative map lines animation */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animated-dash-line {
+  stroke-dasharray: 8, 8;
+  animation: dash 5s linear infinite;
+}
+

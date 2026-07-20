@@ -1,0 +1,6 @@
+{
+  "name": "Hackpreneur",
+  "description": "The premium Pirates of the Caribbean-themed hackathon for entrepreneurial developers and designers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
