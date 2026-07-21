@@ -113,7 +113,7 @@ export default function Prizes() {
                     whileHover={{ scale: 1.05 }}
                   >
                     <img
-                      src="/src/assets/images/treasure_chest_1784556607492.jpg"
+                      src="https://cdn.phototourl.com/free/2026-07-21-59d0cfc6-ae30-419c-a9f5-4c6d2a341848.jpg"
                       alt="Locked Treasure Chest"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
@@ -159,7 +159,7 @@ export default function Prizes() {
                     title="Close Chest"
                   >
                     <img
-                      src="/src/assets/images/treasure_chest_1784556607492.jpg"
+                      src="https://cdn.phototourl.com/free/2026-07-21-59d0cfc6-ae30-419c-a9f5-4c6d2a341848.jpg"
                       alt="Unlocked Chest"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover scale-110 filter brightness-110"
@@ -237,7 +237,7 @@ export default function Prizes() {
                   onClick={() => setIsOpen(false)}
                   className="mt-12 text-xs font-mono text-slate-500 hover:text-amber-400 transition-colors uppercase tracking-widest cursor-pointer"
                 >
-                  🔒 Lock Chest & Reset Seals
+                
                 </button>
               </motion.div>
             )}
