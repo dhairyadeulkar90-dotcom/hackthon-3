@@ -240,7 +240,7 @@ export default function TimelineMap() {
           <div 
             className="relative min-w-[1000px] h-[600px] bg-cover bg-center overflow-hidden"
             style={{ 
-              backgroundImage: `url('/src/assets/images/pirate_treasure_map_1784556589475.jpg')`,
+              backgroundImage: `url('https://cdn.phototourl.com/free/2026-07-21-27902384-7a7e-4054-b46f-e6c66cd90fa5.jpg')`,
               backgroundColor: '#0c0a09'
             }}
           >
