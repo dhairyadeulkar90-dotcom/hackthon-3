@@ -118,7 +118,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           transition={{ delay: 1.6, duration: 1, ease: "easeOut" }}
           className="mt-20 font-mono text-xs md:text-sm tracking-[0.3em] uppercase text-amber-400 font-semibold max-w-xl leading-relaxed"
         >
-          Welcome Where Invaotion Meets The Idea
+          
         </motion.p>
 
         {/* Register Button */}
