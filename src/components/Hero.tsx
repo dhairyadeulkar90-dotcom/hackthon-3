@@ -35,7 +35,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.4 }}
-        transition={{ duration: 2, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         style={{ 
           y: backgroundY, 
           scale: backgroundScale,
@@ -57,13 +57,13 @@ export default function Hero({ onRegisterClick }: HeroProps) {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/40 to-slate-950 z-0 pointer-events-none" 
       />
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(2,6,23,0.95)_100%)] z-0 pointer-events-none" 
       />
 
@@ -89,7 +89,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
               duration: 4 + Math.random() * 6,
               repeat: Infinity,
               ease: 'easeInOut',
-              delay: Math.random() * 2, // Reduced delay for faster start
+              delay: Math.random() * 0.5, // Start sparks almost immediately
             }}
           />
         ))}
@@ -103,9 +103,9 @@ export default function Hero({ onRegisterClick }: HeroProps) {
         
         {/* Headline */}
         <motion.h1 
-          initial={{ opacity: 0, y: 35 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
+          transition={{ delay: 1.2, duration: 1, ease: "easeOut" }}
           className="font-serif text-5xl md:text-8xl font-black text-white tracking-tight leading-none text-stroke-gold uppercase"
         >
           HACKPRENEUR
@@ -113,9 +113,9 @@ export default function Hero({ onRegisterClick }: HeroProps) {
 
         {/* Subtitle */}
         <motion.p
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ delay: 1.6, duration: 1, ease: "easeOut" }}
           className="mt-20 font-mono text-xs md:text-sm tracking-[0.3em] uppercase text-amber-400 font-semibold max-w-xl leading-relaxed"
         >
           Welcome Where Invaotion Meets The Idea
@@ -128,7 +128,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
+          transition={{ delay: 2, duration: 1, ease: "easeOut" }}
           className="mt-32 px-10 py-4 font-mono text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-slate-950 hover:text-white bg-amber-400 hover:bg-cyan-500 border border-amber-500/20 hover:border-cyan-400 rounded-lg shadow-[0_0_30px_rgba(245,158,11,0.25)] hover:shadow-[0_0_40px_rgba(6,182,212,0.45)] transition-all duration-300 transform hover:scale-105 active:scale-95 cursor-pointer z-30 select-none inline-block"
         >
           Registration
@@ -147,7 +147,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             <path d="M2 21h20M19.3 14.8C21.1 13.5 22 11.7 22 10c0-3.9-3.6-7-8-7s-8 3.1-8 7c0 1.7.9 3.5 2.7 4.8l-1.7 4.2h15.3l-1.7-4.2z" fill="currentColor" />
           </svg>
           <span className="absolute -top-4 left-1 text-[8px] font-mono font-bold bg-slate-950/90 text-amber-400 border border-amber-500/20 px-1 py-0.5 rounded shadow">
-            HACK_VESSEL
+            HACK_VESSE
           </span>
         </motion.div>
 
