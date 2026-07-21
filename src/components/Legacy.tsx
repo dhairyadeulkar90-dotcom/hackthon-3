@@ -49,7 +49,7 @@ function AnimatedCounter({ value, suffix, label, prefix = '', delay }: StatItemP
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay, duration: 0.6 }}
-      className="relative flex flex-col items-center justify-center p-8 bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group hover:border-slate-700 transition-all duration-500 shadow-2xl"
+      className="relative flex flex-col items-center justify-center p-8 rounded-xl overflow-hidden group transition-all duration-500"
     >
       {/* Stat Numbers */}
       <h3 className="font-serif text-4xl md:text-5xl font-black text-white tracking-tight flex items-baseline gap-0.5 mt-2">
