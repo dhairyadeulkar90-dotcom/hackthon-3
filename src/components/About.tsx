@@ -21,7 +21,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="font-serif text-3.5xl md:text-5xl font-black text-white tracking-tight"
           >
-            About Hackpreneur 16
+            About Hackpreneur
           </motion.h2>
           <div className="w-20 h-1 bg-slate-800 mx-auto mt-4 rounded" />
         </div>
@@ -36,7 +36,7 @@ export default function About() {
         >
           
           <p className="font-serif text-xl md:text-2xl leading-relaxed text-slate-100 italic mb-6 max-w-2xl">
-            "The Hackpreneur 16 challenge where developers, designers, and thinkers come together to build impactful solutions."
+            "The Hackpreneur  challenge where developers, designers, and thinkers come together to build impactful solutions."
           </p>
           
           <p className="text-sm md:text-base font-sans text-slate-400 leading-relaxed max-w-2xl">
