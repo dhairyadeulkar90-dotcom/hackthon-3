@@ -103,7 +103,7 @@ export default function TimelineMap() {
       description: 'Seek wisdom from master captains to refine your navigation.',
       islandName: 'Sage Reef',
       icon: CompassIcon,
-      image: 'https://i.pinimg.com/1200x/b3/a9/f6/b3a9f65e281de091f42a16c16b5e8d7a.jpg',
+      image: 'https://i.pinimg.com/736x/25/a0/7f/25a07faa836d237118cb6a409e651bce.jpg',
       x: 48,
       y: 55,
       date: '3:00 PM',
