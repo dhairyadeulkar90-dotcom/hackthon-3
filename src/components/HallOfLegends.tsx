@@ -104,8 +104,8 @@ export default function HallOfLegends() {
         
         {/* Section Heading */}
         <div className="text-center mb-20">
-          <h2 className="font-serif text-4xl md:text-5xl font-black mt-2 text-white">
-            ItechRoots <span className="text-amber-400">Winners</span>
+          <h2 className="font-serif text-4xl md:text-5xl font-black mt-2 text-amber-500 uppercase drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
+            ItechRoots <span className="text-white">Winners</span>
           </h2>
         </div>
 
