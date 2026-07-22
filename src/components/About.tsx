@@ -19,9 +19,9 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="font-serif text-3.5xl md:text-5xl font-black text-white tracking-tight"
+            className="font-serif text-3.5xl md:text-5xl font-black text-amber-500 tracking-wider uppercase drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]"
           >
-            About Hackpreneur
+            About Hackpreneur 
           </motion.h2>
           <div className="w-20 h-1 bg-slate-800 mx-auto mt-4 rounded" />
         </div>
@@ -36,11 +36,11 @@ export default function About() {
         >
           
           <p className="font-serif text-xl md:text-2xl leading-relaxed text-slate-100 italic mb-6 max-w-2xl">
-            "The Hackpreneur  challenge where developers, designers, and thinkers come together to build impactful solutions."
+            "The Hackpreneur challenge where developers, designers, and thinkers come together to build impactful solutions."
           </p>
           
           <p className="text-sm md:text-base font-sans text-slate-400 leading-relaxed max-w-2xl">
-            Focused on the UN Sustainable Development Goals, CIH 3.0 empowers participants to solve real-world problems through creativity, technology, and collaboration.
+            Focused on the UN Sustainable Development Goals, empowers participants to solve real-world problems through creativity, technology, and collaboration.
           </p>
         </motion.div>
 
