@@ -48,7 +48,7 @@ export default function Prizes() {
     },
     {
       rank: '3rd',
-      amount: 'Find me ',
+      amount: 'Coming Soon  ',
       title: 'Navigator’s Stash',
       icon: '',
       perks: [
@@ -58,6 +58,32 @@ export default function Prizes() {
         'Custom bronze ship trophies'
       ],
       color: 'border-amber-700 shadow-amber-800/10'
+    },
+    {
+      rank: 'Special',
+      amount: '1000',
+      title: 'Web tech',
+      icon: '',
+      perks: [
+        'Best original design award',
+        'Most rebellious architecture award',
+        'Green tech sustainable code award',
+        'Elite solver medals'
+      ],
+      color: 'border-teal-500 shadow-teal-500/10'
+    },
+     {
+      rank: 'Special',
+      amount: '1000',
+      title: 'Web tech',
+      icon: '',
+      perks: [
+        'Best original design award',
+        'Most rebellious architecture award',
+        'Green tech sustainable code award',
+        'Elite solver medals'
+      ],
+      color: 'border-teal-500 shadow-teal-500/10'
     },
     {
       rank: 'Special',
@@ -85,6 +111,7 @@ export default function Prizes() {
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-black mt-2 text-white uppercase">
             <span className="text-amber-400">TECHNICAL EVENTS</span>
+            
           </h2>
         </div>
 
@@ -128,17 +155,9 @@ export default function Prizes() {
                     </div>
                   </motion.div>
 
-                  {/* Sparkle overlays removed */}
+                  
+                {/* Sparkle overlays removed */}
                 </div>
-
-                <button
-                  id="btn-unlock-vault"
-                  onClick={() => setIsOpen(true)}
-                  className="mt-8 px-6 py-3 font-serif text-sm font-bold tracking-widest text-amber-400 bg-slate-950/80 border-2 border-amber-500/40 hover:border-amber-400 hover:bg-slate-950 rounded shadow-xl transition-all duration-300 flex items-center gap-2 cursor-pointer"
-                >
-                 
-                  UNLOCK Other Events 
-                </button>
               </motion.div>
             ) : (
               /* Chest Unlocked View with Radiant Rays */
@@ -168,7 +187,6 @@ export default function Prizes() {
                     
                     {/* Glowing Sparkles emerging from top */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-5xl animate-ping opacity-60">✨</span>
                     </div>
                   </div>
                   
@@ -183,7 +201,13 @@ export default function Prizes() {
                       initial={{ opacity: 0, y: 50, scale: 0.9 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       transition={{ delay: index * 0.15, duration: 0.6, type: 'spring', stiffness: 50 }}
-                      className={`relative bg-slate-950/90 border-2 rounded-xl p-6 flex flex-col justify-between shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-slate-950 ${prize.color}`}
+                      className={`relative border-2 rounded-xl p-6 flex flex-col justify-between shadow-2xl transition-all duration-300 hover:-translate-y-2 ${prize.color}`}
+                      style={{
+                        backgroundImage: `url('https://as1.ftcdn.net/v2/jpg/06/83/99/36/1000_F_683993672_e6fM4iwwv1A3fNvOj37ZbM2MKeHXAGTI.jpg')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundColor: 'rgba(2, 6, 23, 0.9)'
+                      }}
                     >
                       {/* Stud corner overlays */}
                       <div className="absolute top-2 left-2 w-2 h-2 rounded-full bg-amber-500/20" />
@@ -197,9 +221,7 @@ export default function Prizes() {
                           <span className="font-serif text-4xl font-extrabold text-amber-400">
                             {prize.icon}
                           </span>
-                          <span className="font-mono text-xs bg-slate-900 border border-slate-800 px-2.5 py-1 rounded text-slate-400 font-bold uppercase tracking-widest">
-                            {prize.rank} Place
-                          </span>
+
                         </div>
 
                         <h3 className="font-serif text-lg font-bold text-white mt-4 tracking-wide leading-tight">
@@ -210,21 +232,13 @@ export default function Prizes() {
                           {prize.amount}
                         </h4>
 
-                        {/* Perks */}
-                        <ul className="mt-6 space-y-2.5 border-t border-slate-900 pt-4">
-                          {prize.perks.map((perk, idx) => (
-                            <li key={idx} className="flex items-start gap-2 text-xs text-slate-300 leading-normal font-light">
-                              <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-1.5 flex-shrink-0" />
-                              <span>{perk}</span>
-                            </li>
-                          ))}
-                        </ul>
+
                       </div>
 
                       {/* Small visual coin flourish */}
                       <div className="mt-6 text-right">
                         <span className="inline-flex items-center gap-1 text-[10px] font-mono text-slate-500 uppercase tracking-widest">
-                          <Trophy className="w-3.5 h-3.5 text-amber-500" /> Secure Loot
+                          <Trophy className="w-3.5 h-3.5 text-amber-500" /> 
                         </span>
                       </div>
 
@@ -237,7 +251,7 @@ export default function Prizes() {
                   onClick={() => setIsOpen(false)}
                   className="mt-12 text-xs font-mono text-slate-500 hover:text-amber-400 transition-colors uppercase tracking-widest cursor-pointer"
                 >
-                
+                  🔒 Lock Chest & Reset Seals
                 </button>
               </motion.div>
             )}
