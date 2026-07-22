@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
+import AudioPlayer from './AudioPlayer';
 
 interface HeroProps {
   onRegisterClick: () => void;
@@ -106,20 +107,12 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 1, ease: "easeOut" }}
-          className="font-serif text-5xl md:text-8xl font-black text-white tracking-tight leading-none text-stroke-gold uppercase"
+          className="font-serif text-5xl md:text-8xl font-black text-amber-500 tracking-wider leading-none uppercase drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]"
         >
           HACKPRENEUR
         </motion.h1>
 
         {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.6, duration: 1, ease: "easeOut" }}
-          className="mt-20 font-mono text-xs md:text-sm tracking-[0.3em] uppercase text-amber-400 font-semibold max-w-xl leading-relaxed"
-        >
-          
-        </motion.p>
 
         {/* Register Button */}
         <motion.a
@@ -134,6 +127,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
           Registration
         </motion.a>
       </motion.div>
+      <AudioPlayer />
 
       {/* Cinematic Animated Wave Separator at bottom */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-30 pointer-events-none">
@@ -147,7 +141,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             <path d="M2 21h20M19.3 14.8C21.1 13.5 22 11.7 22 10c0-3.9-3.6-7-8-7s-8 3.1-8 7c0 1.7.9 3.5 2.7 4.8l-1.7 4.2h15.3l-1.7-4.2z" fill="currentColor" />
           </svg>
           <span className="absolute -top-4 left-1 text-[8px] font-mono font-bold bg-slate-950/90 text-amber-400 border border-amber-500/20 px-1 py-0.5 rounded shadow">
-            HACK_VESSE
+            HACK_VESSEL
           </span>
         </motion.div>
 
