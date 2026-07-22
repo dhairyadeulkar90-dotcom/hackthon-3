@@ -22,8 +22,8 @@ export default function Prizes() {
   const prizes: PrizeCard[] = [
     {
       rank: '1st',
-      amount: '3000',
-      title: 'Vibe Coding',
+      amount: 'Coming Soon',
+      title: 'Photo Rush',
       icon: '',
       perks: [
         'Direct entry to elite startup incubator',
@@ -35,7 +35,7 @@ export default function Prizes() {
     },
     {
       rank: '2nd',
-      amount: '500',
+      amount: 'Coming Soon',
       title: 'Code Clash',
       icon: '',
       perks: [
@@ -49,7 +49,7 @@ export default function Prizes() {
     {
       rank: '3rd',
       amount: 'Coming Soon  ',
-      title: 'Navigator’s Stash',
+      title: 'Poster Design',
       icon: '',
       perks: [
         'Sponsor direct interview cards',
@@ -61,8 +61,8 @@ export default function Prizes() {
     },
     {
       rank: 'Special',
-      amount: '1000',
-      title: 'Web tech',
+      amount: 'Coming Soon',
+      title: 'Prompt-A-Thon',
       icon: '',
       perks: [
         'Best original design award',
@@ -74,8 +74,8 @@ export default function Prizes() {
     },
      {
       rank: 'Special',
-      amount: '1000',
-      title: 'Web tech',
+      amount: 'Coming Soon',
+      title: 'Technical TresureHunt',
       icon: '',
       perks: [
         'Best original design award',
@@ -87,8 +87,8 @@ export default function Prizes() {
     },
     {
       rank: 'Special',
-      amount: '1000',
-      title: 'Web tech',
+      amount: 'Coming Soon',
+      title: 'Code Clash',
       icon: '',
       perks: [
         'Best original design award',
@@ -251,7 +251,7 @@ export default function Prizes() {
                   onClick={() => setIsOpen(false)}
                   className="mt-12 text-xs font-mono text-slate-500 hover:text-amber-400 transition-colors uppercase tracking-widest cursor-pointer"
                 >
-                  🔒 Lock Chest & Reset Seals
+                   Lock Chest & Reset Seals
                 </button>
               </motion.div>
             )}
