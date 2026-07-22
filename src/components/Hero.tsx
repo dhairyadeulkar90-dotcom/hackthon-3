@@ -141,7 +141,7 @@ export default function Hero({ onRegisterClick }: HeroProps) {
             <path d="M2 21h20M19.3 14.8C21.1 13.5 22 11.7 22 10c0-3.9-3.6-7-8-7s-8 3.1-8 7c0 1.7.9 3.5 2.7 4.8l-1.7 4.2h15.3l-1.7-4.2z" fill="currentColor" />
           </svg>
           <span className="absolute -top-4 left-1 text-[8px] font-mono font-bold bg-slate-950/90 text-amber-400 border border-amber-500/20 px-1 py-0.5 rounded shadow">
-            HACK_VESSEL
+            HACK_VESSE
           </span>
         </motion.div>
 
