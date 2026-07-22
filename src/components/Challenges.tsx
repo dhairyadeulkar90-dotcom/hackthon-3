@@ -89,8 +89,8 @@ export default function Challenges() {
         {/* Section Heading */}
         <div className="text-center mb-20">
           <p className="text-xs font-mono tracking-[0.3em] text-amber-500 uppercase">THE ARCHIPELAGO OF QUESTS</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-black mt-2 text-white">
-            CHALLENGE <span className="text-amber-400">ISLANDS</span>
+          <h2 className="font-serif text-4xl md:text-5xl font-black mt-2 text-amber-500 uppercase drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
+            CHALLENGE <span className="text-white">ISLANDS</span>
           </h2>
           <div className="w-24 h-1 bg-amber-500/30 mx-auto mt-4 rounded" />
           <p className="mt-4 text-sm text-slate-400 max-w-lg mx-auto font-light leading-relaxed">
@@ -161,7 +161,7 @@ export default function Challenges() {
                     </p>
                   </div>
                   <span className="text-[10px] font-mono text-slate-500 hover:text-amber-400 transition-colors flex items-center gap-1 cursor-help">
-                    <HelpCircle className="w-3.5 h-3.5" /> Rules Apply
+                    <HelpCircle className="w-3.5 h-3.5" /> Rules Appl
                   </span>
                 </div>
 
